@@ -1,0 +1,13 @@
+<p>Danh sách các công việc cần làm</p>
+<ul>
+    <li *ngFor="let cv of todo">{{cv}}</li>
+</ul>
+
+<p *ngIf="is_available; then true_condition else false_condition"></p>
+
+<ng-template #true_condition>
+    <p>Điều kiện đúng</p>
+</ng-template>
+<ng-template #false_condition>
+    <p>Điều kiện sai</p>
+</ng-template>
