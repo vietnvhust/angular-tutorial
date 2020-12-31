@@ -1,9 +1,8 @@
 import {Pipe, PipeTransform} from '@angular/core';
-@Pipe ({
-   name : 'sqrt'
-})
+
+@Pipe({name: 'sqrt'})
 export class SqrtPipe implements PipeTransform {
-   transform(val : number) : number {
-      return Math.sqrt(val);
+   transform(value : number) : number {
+      return Math.sqrt(value);
    }
 }
